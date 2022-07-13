@@ -1,0 +1,92 @@
+site_name: Yang's Documentation Stash
+site_url: https://signalfx.github.io/observability-workshop/
+site_author: Sales Engineering EMEA
+site_description: >-
+  This workshop is going to take you through the best-in-class observability platform
+  for ingesting, monitoring, visualizing and analyzing metrics, traces and spans
+
+repo_name: signalfx/observability-workshop
+repo_url: https://github.com/signalfx/observability-workshop/
+edit_uri: ""
+copyright: Copyright &copy; 2022 Splunk Inc. All rights reserved.
+remote_branch: gh-pages
+
+theme:
+  name: material
+  custom_dir: !ENV [THEME_DIR, "overrides"]
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  favicon: images/favicon.ico
+  logo: images/logo.png
+  font:
+    text: "Century Gothic"
+    code: Roboto Mono
+  include_search_page: false
+  search_index_only: true
+  language: en
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.keys
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+
+extra_css:
+  - extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/signalfx/observability-workshop
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/splunk
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/splunk/
+  version:
+    provider: mike
+
+nav:
+    - Monty Hall Profiling Workshop: 
+        - Setup: MHPW_setup.md
+        - Instrument: MHPW_instrumentation.md
+        - Remediate: MHPW_remediation.md
+plugins:
+  - git-revision-date-localized:
+      type: date
+

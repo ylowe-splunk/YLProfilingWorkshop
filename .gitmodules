@@ -1,0 +1,4 @@
+[submodule "ylowe-splunk.github.io"]
+	path = ylowe-splunk.github.io
+	url = https://github.com/ylowe-splunk/ylowe-splunk.github.io
+	branch = main
