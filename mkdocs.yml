@@ -1,12 +1,12 @@
 site_name: Yang's Documentation Stash
-site_url: https://signalfx.github.io/observability-workshop/
-site_author: Sales Engineering EMEA
+site_url: https://ylowe-splunk.github.io/YLProfilingWorkshop/
+site_author: Sales Engineering GSS
 site_description: >-
   This workshop is going to take you through the best-in-class observability platform
   for ingesting, monitoring, visualizing and analyzing metrics, traces and spans
 
-repo_name: signalfx/observability-workshop
-repo_url: https://github.com/signalfx/observability-workshop/
+repo_name: ylowe-splunk/YLProfilingWorkshop
+repo_url: https://github.com/ylowe-splunk/YLProfilingWorkshop/
 edit_uri: ""
 copyright: Copyright &copy; 2022 Splunk Inc. All rights reserved.
 remote_branch: gh-pages
