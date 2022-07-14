@@ -73,7 +73,7 @@ Make sure Docker is open, and run the following command in the workshop director
 	docker run -d --rm --name collector \
     -v "$(pwd)/etc/collector.yaml":/etc/otel/config.yaml \
     -p 4317:4317 \
-    -e SPLUNK_TOKEN=pMIUgbzKE8sqIrT2cdq_8g \
+    -e SPLUNK_TOKEN= ... \
     -e SPLUNK_REALM=us0 \
     otel/opentelemetry-collector-contrib:0.36.0 
 	```
